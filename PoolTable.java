@@ -62,7 +62,7 @@ public class PoolTable {
         // Output Pool Table
         System.out.println("PoolTable\nPool_no\tStart_Index");
         for (int i = 0; i < poolTable.size(); i++) {
-            System.out.println("#" + (i + 1) + "\t" + poolTable.get(i));
+            System.out.println("#" + (i + 1) + "\t0" + poolTable.get(i));
         }
     }
 }
