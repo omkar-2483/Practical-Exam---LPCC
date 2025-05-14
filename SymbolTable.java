@@ -13,7 +13,7 @@ public class SymbolTable {
 
         @Override
         public String toString() {
-            return String.format("%-5s\t%3d", name, address);
+            return String.format("%s\t%d", name, address);
         }
     }
 
@@ -25,10 +25,10 @@ public class SymbolTable {
                 "LOOP MOVER AREG, A",
                 "  MOVER BREG, B",
                 "  COMP BREG, ='2'",
-                "  BC GT, C",
+                "  BC GT, LOOP",
                 "BACK SUB AREG, B",
                 "  COMP AREG, ='5'",
-                "  BC LT, D",
+                "  BC LT, BACK",
                 "  STOP",
                 "A DS 1",
                 "B DS 1",

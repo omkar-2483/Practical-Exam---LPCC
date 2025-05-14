@@ -13,7 +13,7 @@ public class LiteralTable {
 
         @Override
         public String toString() {
-            return String.format("%-6s\t%3d", value, address);
+            return String.format("%s\t%d", value, address);
         }
     }
 
